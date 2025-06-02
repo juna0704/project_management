@@ -1,0 +1,27 @@
+Fullstack NextJs Project Management app
+NextJs, Redux, RTK-Query, Tailwind css, Recharts, Typescript, Material-UI, NodeJs, Express, Prizma, Postgresql, AWS
+features: 
+	Drag and Drop different task to different brackets
+	Add new task with fully validation
+	Able to create a new board
+	List view 
+	Timeline view
+	Table view
+	Search function
+	Users
+	Teams
+	Settings
+	Timeline 
+	Home(Dashboard)
+	Light mode/Dark mode
+	Oauth
+	AuthZ
+	profile
+	messages
+	chat
+	Filter
+	Export csv/exel
+	Responsive
+	cognito authentication
+	confirmation email
+	
