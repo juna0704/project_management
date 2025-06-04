@@ -15,8 +15,8 @@ body,
   height: 100%;
   margin: 0;
   @apply text-sm;
-  @apply text-gray-900;
-  @apply bg-gray-500;
+  @apply dark:bg-black;
+  @apply bg-white;
 }
 
 /* TIMELINE STYLING */
