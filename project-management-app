@@ -25,3 +25,29 @@ features:
 	cognito authentication
 	confirmation email
 	
+#packeges
+	@mui/material 
+	@emotion/react 
+	@emotio/styled
+	@mui/x-data-grid
+	lucide-react 
+	numeral 
+	date-fns 
+	axios 
+	recharts 
+	react-dnd 
+	react-dnd-html5-backend 
+	gantt-task-react
+
+# Dev-Dependicies
+@types/node
+@types/uuid 
+@types/numeral
+prettier 
+prettier-plugin-tailwindcss
+tailwind-merge
+
+
+# Page Layout
+Sidebar
+Navbar
