@@ -1,6 +1,10 @@
 import { PrismaClient } from "@prisma/client";
 import fs from "fs";
 import path from "path";
+
+// CommonJS equivalent - __dirname is already available
+const __dirname = path.resolve();
+
 const prisma = new PrismaClient();
 
 async function deleteAllData(orderedFileNames: string[]) {

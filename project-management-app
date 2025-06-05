@@ -72,3 +72,12 @@ npm install -D @types/cors@^2.8.17 @types/express@^4.17.21 @types/morgan@^1.9.9 
 },"include": ["src/**/*", "src/data/**/*.json", "prisma/**/*"]
 
 
+//prisma
+npx prisma generate
+npx prisma migrate dev --name init
+
+//for prisma clean slate
+npx prisma migrate reset
+
+//Sql Query
+SELECT setval(pg_get_serial_sequence('"Task"', 'id'), coalesce(max(id)+1,1), false) FROM "Task"
