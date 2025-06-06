@@ -6,7 +6,7 @@ import BoardView from '../BordView';
 import ListView from '../ListView';
 import Timeline from '../TimelineView';
 import TableView from '../TableView';
-import ModalNewTask from '@/components/ModelNewTask';
+import ModalNewTask from '@/components/ModalNewTask';
 
 type Props = {
   params: { id: string };

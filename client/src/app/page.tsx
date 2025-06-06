@@ -1,10 +1,5 @@
-import Image from 'next/image';
-import styles from './page.module.css';
+import HomePage from './home/page';
 
 export default function Home() {
-  return (
-    <div className="text-blue flex h-screen items-center justify-center text-black">
-      Home
-    </div>
-  );
+  return <HomePage />;
 }
