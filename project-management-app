@@ -53,7 +53,9 @@ Sidebar
 Navbar
 
 
+
 ///Server
+npx create-next-app@latest
 npx tsc --init	(tsconfig.json)
 npx prisma init (prisma folder-schema.prisma)
 
@@ -81,3 +83,57 @@ npx prisma migrate reset
 
 //Sql Query
 SELECT setval(pg_get_serial_sequence('"Task"', 'id'), coalesce(max(id)+1,1), false) FROM "Task"
+
+
+1 install all Dependicies
+2 go to src/app/page.tsx changes according to display
+3 go to src/app/global.css use tailwind base component utilities, and resetting function for global packeges
+4 install prettier and create .prettierrc config for tailwind 
+5 install tailwind-merge
+6 create tailwind.config.ts in global space and config 
+7 make dashboardWrapper.tsx 
+8 use dashboardWrapper in layout.tsx
+9 create navbar component and use in dashboardWrapper
+10 create sidebar component and use in dashboardWrapper
+11 install Dependicies for react-redux redux-toolkit
+12 create file src/app/redux.tsx
+13 create file src/state/index.ts
+14 create file src/state/api.ts
+15 go to dashboardWrapper and import and use storeprovider
+16 go to navbar component and create sidebar collapse and darkmode functionality
+17 go to sidebar and update all the necessary components in sidebar
+18 now create backend after navbar and sidebar
+19 run npm init -y
+20 npm i -D ts-node typescript @types/node
+21 npx tsc --init
+22 changes in tsconfig.json{"module":"nodenext","moduleResolution":"nodenext","resolveJsonModule":"true","outDir":"./dist"},"include":["src/**/*", "src/data/**/*.json", "prisma/**/*"]
+23 npm i prisma @prisma/client
+24 npx prisma init
+25 go to prisma folder and create seedData folder and copy all json files
+26 create file prisma/seedData/seed.ts
+27 go to schema.prisma and create database
+28 in packege.json after scripts {"seed":"ts-node prisma/seed.ts"}
+29 in .env file use correct string for database
+30 npx prisma generate
+31 npx prisma migrate dev --name init
+32 npm run seed
+33 npx prisma migrate reset (for resetting prisma db)
+34 after install npm i express body-parser cors dotenv helmet morgan
+35 npm i -D rimraf concurrently nodemon @types/cors @types/express @types/morgan @types/node
+36 now create src/index.ts and create express server
+37 after creating server go to package.json add scripts to run server
+38 now create src/controller/projectController.ts
+39 after create src/routes/projectRoutes.ts
+40 after connect this routes into main file 
+41 create a crud api and use this in sql for auto indexing "//Sql Query
+SELECT setval(pg_get_serial_sequence('"Task"', 'id'), coalesce(max(id)+1,1), false) FROM "Task""
+42 create src/controller/taskController.ts
+43 create and connect to src/routers/taskRouter.ts
+44 connect to index.ts taskRouter.ts
+45 
+
+
+
+
+
+
