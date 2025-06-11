@@ -1,13 +1,4 @@
-{
-  /**
-  Summary
-The code renders a dashboard layout:
-Task Priority (BarChart)
-Project Status (PieChart)
-Task list (DataGrid)
-  */
-}
-('use client');
+'use client';
 
 import {
   Priority,
@@ -189,3 +180,13 @@ const HomePage = () => {
 };
 
 export default HomePage;
+
+{
+  /**
+  Summary
+The code renders a dashboard layout:
+Task Priority (BarChart)
+Project Status (PieChart)
+Task list (DataGrid)
+  */
+}
