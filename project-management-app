@@ -149,3 +149,19 @@ SELECT setval(pg_get_serial_sequence('"Task"', 'id'), coalesce(max(id)+1,1), fal
 65 create a ProjectCard component and import this component into search page
 66 create a UserCard component and import this component into search page
 67 for settings page create src/app/settings/page.tsx
+68 for Users page create backend file userController.ts and userRoute.ts and connect to index.ts of backend
+69 after backend go to api.ts in frontend and code for api call
+70 create page for users at src/app/users/page.tsx
+71 for Teams page create backend files teamControllers.ts and teamRoute.ts and connect to index.ts of backend
+72 after backend go to state/api.ts in frontend and code for api call
+73 create page for teams at src/app/teams/page.tsx
+74 create page for homepage at src/app/homepage/page.tsx
+75 for priority page change backend taskController.ts function getUserTask and make changes at taskRoutes.ts
+76 after the backend change in frontend src/state/api.ts
+77 now create file at src/app/priority/reusablePriorityPage/index.tsx
+78 now create file at src/app/priority/urgent/page.tsx
+79 now create file at src/app/priority/high/page.tsx
+80 now create file at src/app/priority/medium/page.tsx
+81 now create file at src/app/priority/urgent/page.tsx
+82 now create file at src/app/priority/low/page.tsx
+83 now create file at src/app/priority/backlog/page.tsx
