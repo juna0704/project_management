@@ -142,4 +142,10 @@ SELECT setval(pg_get_serial_sequence('"Task"', 'id'), coalesce(max(id)+1,1), fal
 58 go to projectHeader.tsx and create ModalNewProject
 59 create a component of Modal/index.tsx
 60 create a new component of ModalNewTask and connect with src/app/projects/[id]/index.tsx
-61
+61 create a page of timeline at src/timeline/index.tsx
+62 create backend for searchController.ts and searchRoutes.ts and connect to main backend app file
+63 in frontend go to api.ts and code an api request for frontend
+64 now create search page src/search/page.tsx
+65 create a ProjectCard component and import this component into search page
+66 create a UserCard component and import this component into search page
+67 for settings page create src/app/settings/page.tsx
