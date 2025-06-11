@@ -1,62 +1,60 @@
 Fullstack NextJs Project Management app
 NextJs, Redux, RTK-Query, Tailwind css, Recharts, Typescript, Material-UI, NodeJs, Express, Prizma, Postgresql, AWS
-features: 
-	Drag and Drop different task to different brackets
-	Add new task with fully validation
-	Able to create a new board
-	List view 
-	Timeline view
-	Table view
-	Search function
-	Users
-	Teams
-	Settings
-	Timeline 
-	Home(Dashboard)
-	Light mode/Dark mode
-	Oauth
-	AuthZ
-	profile
-	messages
-	chat
-	Filter
-	Export csv/exel
-	Responsive
-	cognito authentication
-	confirmation email
-	
+features:
+Drag and Drop different task to different brackets
+Add new task with fully validation
+Able to create a new board
+List view
+Timeline view
+Table view
+Search function
+Users
+Teams
+Settings
+Timeline
+Home(Dashboard)
+Light mode/Dark mode
+Oauth
+AuthZ
+profile
+messages
+chat
+Filter
+Export csv/exel
+Responsive
+cognito authentication
+confirmation email
 #packeges
-	@mui/material 
-	@emotion/react 
-	@emotio/styled
-	@mui/x-data-grid
-	lucide-react 
-	numeral 
-	date-fns 
-	axios 
-	recharts 
-	react-dnd 
-	react-dnd-html5-backend 
-	gantt-task-react
+@mui/material
+@emotion/react
+@emotio/styled
+@mui/x-data-grid
+lucide-react
+numeral
+date-fns
+axios
+recharts
+react-dnd
+react-dnd-html5-backend
+gantt-task-react
 
 # Dev-Dependicies
+
 @types/node
-@types/uuid 
+@types/uuid
 @types/numeral
-prettier 
+prettier
 prettier-plugin-tailwindcss
 tailwind-merge
 
-
 # Page Layout
+
 Sidebar
 Navbar
 
-
-
 ///Server
 npx create-next-app@latest
-npx tsc --init	(tsconfig.json)
+npx tsc --init (tsconfig.json)
 npx prisma init (prisma folder-schema.prisma)
 
 Regular Dependicies
@@ -67,12 +65,11 @@ npm install -D @types/cors@^2.8.17 @types/express@^4.17.21 @types/morgan@^1.9.9 
 
 //tsconfig.json changes
 {
-	"module": "nodenext", 
-	"moduleResolution": "nodenext",
-	"resolveJsonModule": true, 
-	"outDir": "./dist",
+"module": "nodenext",
+"moduleResolution": "nodenext",
+"resolveJsonModule": true,
+"outDir": "./dist",
 },"include": ["src/**/*", "src/data/**/*.json", "prisma/**/*"]
-
 
 //prisma
 npx prisma generate
@@ -84,14 +81,13 @@ npx prisma migrate reset
 //Sql Query
 SELECT setval(pg_get_serial_sequence('"Task"', 'id'), coalesce(max(id)+1,1), false) FROM "Task"
 
-
 1 install all Dependicies
 2 go to src/app/page.tsx changes according to display
 3 go to src/app/global.css use tailwind base component utilities, and resetting function for global packeges
-4 install prettier and create .prettierrc config for tailwind 
+4 install prettier and create .prettierrc config for tailwind
 5 install tailwind-merge
-6 create tailwind.config.ts in global space and config 
-7 make dashboardWrapper.tsx 
+6 create tailwind.config.ts in global space and config
+7 make dashboardWrapper.tsx
 8 use dashboardWrapper in layout.tsx
 9 create navbar component and use in dashboardWrapper
 10 create sidebar component and use in dashboardWrapper
@@ -124,16 +120,26 @@ SELECT setval(pg_get_serial_sequence('"Task"', 'id'), coalesce(max(id)+1,1), fal
 37 after creating server go to package.json add scripts to run server
 38 now create src/controller/projectController.ts
 39 after create src/routes/projectRoutes.ts
-40 after connect this routes into main file 
+40 after connect this routes into main file
 41 create a crud api and use this in sql for auto indexing "//Sql Query
 SELECT setval(pg_get_serial_sequence('"Task"', 'id'), coalesce(max(id)+1,1), false) FROM "Task""
 42 create src/controller/taskController.ts
 43 create and connect to src/routers/taskRouter.ts
 44 connect to index.ts taskRouter.ts
-45 
-
-
-
-
-
-
+45 code api.ts in frontend for data from backend
+46 build project page create app/project/[id]/page.tsx
+48 go to sidebar/index.tsx and call for api to get data from backend
+47 build project header file app/project/projectheader.tsx
+49 create a header component
+50 build bordview page app/projects/bordview/index.tsx and connect with app/projects/[id]/page.tsx
+51 build listview page app/projects/listview/index.tsx and connect wiht app/projects/[id]/page.tsx
+52 create TaskCard component
+53 create timeline page app/projects/timeline/index.tsx and connect with app/project[id]/page.tsx
+54 go to global.css and add custome css for timeline gantt
+55 create table page app/projects/table/index.tsx and connect with app/project[id]/page.tsx
+56 create utils.ts in src/lib/utils.ts
+57 create ModalNewProject at src/app/project/ModalNewProject/index.tsx
+58 go to projectHeader.tsx and create ModalNewProject
+59 create a component of Modal/index.tsx
+60 create a new component of ModalNewTask and connect with src/app/projects/[id]/index.tsx
+61
