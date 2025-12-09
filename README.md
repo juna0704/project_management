@@ -1,8 +1,4 @@
-Here is the **final cleaned, professional, backend-focused README in pure Markdown format**, ready to paste into a `README.md` file.
 
----
-
-```markdown
 # Full-Stack Application Architecture  
 ### Next.js (Frontend) + Express.js (Backend) + Prisma ORM
 
